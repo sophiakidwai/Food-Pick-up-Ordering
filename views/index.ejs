@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Home Page</title>
+  <title>Superb Eats Canada or Hungry Hippo Canada</title>
 
   <meta charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
@@ -12,13 +12,25 @@
   <link rel="stylesheet" href="/vendor/border-box.css" />
   <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
-
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+  crossorigin="anonymous"
+/>
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script defer src="/scripts/app.js"></script>
 </head>
-
+ <!-------image and name  addition-->
+        <!--Header with image & tag line/name-->
 <body>
+  <%- include("partials/_header") %>
   <h1>Have fun! 🥔</h1>
+  <picture>
+    <source srcset="/img/home/hero/festive/mobile-large.webp" type="image/webp" class="styles__ImageSource-sc-1i35q3j-0 lgiTSq">\
+    <source srcset="/img/home/hero/festive/mobile-large.jpg" type="image/jpg" class="styles__ImageSource-sc-1i35q3j-0 lgiTSq">
+  <img alt src="/img/home/hero/festive/mobile-large.jpg" class="styles__Image-sc-1i35q3j-1 fGXxbi">
+</picture>
 </body>
 
 </html>
