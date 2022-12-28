@@ -2,35 +2,50 @@
 <html lang="en">
 
 <head>
-  <title>Superb Eats Canada or Hungry Hippo Canada</title>
+  <!-- Meta Information -->
+  <title>Lighthouse Pizza</title>
 
   <meta charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- App CSS -->
   <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
   <link rel="stylesheet" href="/vendor/border-box.css" />
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet" href="/styles/layout.css" />
-  <link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-  crossorigin="anonymous"
-/>
+  <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/menu.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/cart.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/landingPage.scss" type="text/css" />
+
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script defer src="/scripts/app.js"></script>
+
 </head>
- <!-------image and name  addition-->
-        <!--Header with image & tag line/name-->
+
 <body>
-  <%- include("partials/_header") %>
-  <h1>Have fun! 🥔</h1>
-  <picture>
-    <source srcset="/img/home/hero/festive/mobile-large.webp" type="image/webp" class="styles__ImageSource-sc-1i35q3j-0 lgiTSq">\
-    <source srcset="/img/home/hero/festive/mobile-large.jpg" type="image/jpg" class="styles__ImageSource-sc-1i35q3j-0 lgiTSq">
-  <img alt src="/img/home/hero/festive/mobile-large.jpg" class="styles__Image-sc-1i35q3j-1 fGXxbi">
-</picture>
+  <!-- Top Nav Bar -->
+<header>
+  <i class="fa-solid fa-pizza-slice fa-2xl">LIGHTHOUSE PIZZA</i>
+  <nav>
+    <ul class="navLinks">
+      <li><a href="order.scss">Order</a></li>
+      <li><a href="menu.scss">Menu</a></li>
+    </ul>
+  </nav>
+  <a class="cart" href="cart.scss"><button>Cart</button></a>
+</header>
+
+<!-- page content -->
+<div class="container" id="homePage">
+<p class="description">Welcome to Lighthouse Pizza. Traditional itlaian flavours and techniques are combined with fresh local ingredients to create a unique dining experience. Each pizza is made to order using, hand tossed dough, quality ingredients and cooked in our unique wood-fire oven.</p>
+</div>
 </body>
 
 </html>
+
+
