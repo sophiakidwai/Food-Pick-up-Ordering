@@ -1,65 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
-  background-image: url(https://images.pexels.com/photos/3826016/pexels-photo-3826016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+	text-align: center;
 }
-
-li, a, button {
-  font-family: "sigmar one", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.content {
+	width: 1200px;
+	margin: 0 auto;
 }
-
 header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	position: fixed;
+  z-index: 1;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
 }
 
-.fa-pizza-slice {
-  margin-right: auto;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
 }
-
-.navLinks {
-  list-style: none;
+nav {
+	float: right;
+	line-height: 100px;
 }
-
-.navLinks li {
-  display: inline-block;
-  padding: 0px 20px;
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
 }
-
-.navLinks li a {
-  transition: all 0.3s ease 0s;
+.image-text {
+	width: 100%;
+	height: 450px;
+	position: fixed;
+	top: 100px;
+	background-image: url(https://images.pexels.com/photos/13736876/pexels-photo-13736876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+	background-size: cover;
+	background-position: center;
 }
-
-.navLinks li a:hover {
-  color: rgb(245, 1, 1);
+.image-text h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	color: #fff;
 }
-
-button {
-  margin-left: 20px;
-  padding: 0px 25px;
-  background-color: rgb(130, 19, 19);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: #ebebeb;
+	height: 1500px;
 }
-
-button:hover {
-  background-color: rgb(245, 1, 1);
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 2px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
 }
-
-.description {
-  display: flex;
-  background-color: rgba(49, 48, 48, 0.5);
-  color: rgb(255, 255, 255);
-  font-family: "sigmar one", sans-serif;
-  font-size: 1.5em;
-  margin-top: 10em;
-  padding: 0.8em;
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
 }
